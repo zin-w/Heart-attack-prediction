@@ -65,9 +65,9 @@ ___
 
 | Model               | Accuracy | Precision | Recall | F-1 score |
 |---------------------|----------|-----------|--------|-----------|
-| Neural Network      | 88%      | 88%       | 88%    | 87%       |
-| Logistic Regression | 90%      | 90%       | 90%    | 90%       |
-| Logistic + SMOTE    | 89%      | 89%       | 89%    | 89%       |
+| Neural Network      | 95%      | 96%       | 95%    | 95%       |
+| Logistic Regression | 95%      | 96%       | 95%    | 95%       |
+| Logistic + SMOTE    | 95%      | 95%       | 95%    | 95%       |
 
 ___
 
