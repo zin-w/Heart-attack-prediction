@@ -5,7 +5,6 @@ A machine learning model that predicts the likelihood of heart attacks based on 
 In this project, we'd dive into heart attack prediction, using the data from kaggle
 
 ___
-
 ## Dataset
 
 - **Source:** https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction
@@ -41,13 +40,75 @@ ___
 
 ## Project structure
 
-- **Data cleaning:** checking for NaN Value, missing data
-- **Data Visualization:** constructing plots, charts to weigh the relations between each variables
-- **Modeling:** The dataset is split into training and test sets using an 80-20 ratio. This ensures the model can be trained on the majority of the data while reserving a separate subset for evaluating generalization performance. The random state of 42 ensures reproducibility of the results.
+- **Data Cleaning**: Checked for nulls, outliers, and suspicious entries (e.g., Cholesterol = 0)
+- **Visualization**: Histograms, boxplots, scatter plots, violin plots, countplots, and pair plots
+- **Correlation Analysis**: Identified strong predictors (e.g., ExerciseAngina, Oldpeak, ST_Slope)
+- **Model Evaluation**: Accuracy, confusion matrix, precision, recall, and F1-score Observed 100% accuracy — flagged and discussed as possible overfitting
+- **Cross-validation**: Verified model consistency across folds
+- **SHAP Explainability**: Visualized feature importance for clinical interpretability
+
+___
+
+## Models Used
+
+- Logistic Regression (with and without class balancing)
+- Neural Network (using TensorFlow/Keras)
+- SMOTE (Synthetic Minority Over-sampling Technique)
+- Polynomial feature engineering (interaction terms)
+- Cross-validation (5-fold)
+- GridSearchCV (Random Forest - on Iris for demonstration)
+- SHAP (Explainable AI visualization for model interpretability)
 
 ___
 
 ## Result
+
+| Model               | Accuracy | Precision | Recall | F-1 score |
+|---------------------|----------|-----------|--------|-----------|
+| Neural Network      | 88%      | 88%       | 88%    | 87%       |
+| Logistic Regression | 90%      | 90%       | 90%    | 90%       |
+| Logistic + SMOTE    | 89%      | 89%       | 89%    | 89%       |
+
+___
+
+## Getting Started
+
+**1. Clone the Repository**
+
+`git clone https://github.com/yourusername/heart-attack-prediction.git
+cd heart-attack-prediction`
+
+**2. Install Dependencies**
+
+`pip install -r requirements.txt'
+
+Or manually install the main libraries:
+`pip install pandas matplotlib seaborn scikit-learn imbalanced-learn shap tensorflow`
+
+**3. Run the Notebook**
+
+Open `heart_attack_prediction.ipynb` in Jupyter or VSCode and run all cells.
+___
+
+## Acknowledgments
+
+Fedesoriano for dataset compilation
+scikit-learn, TensorFlow, and SHAP libraries
+Visualization inspired by Seaborn and Matplotlib
+___
+
+## License
+
+MIT License. See LICENSE file for details.
+___
+
+## Contact
+
+- Created by Suchada W.
+- Email: suchadawongkot1@gmail.com
+- GitHub: zin-w
+
+Feel free to fork, raise issues, or submit pull requests!
 
 
 
