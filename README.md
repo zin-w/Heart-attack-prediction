@@ -80,7 +80,7 @@ cd heart-attack-prediction`
 
 **2. Install Dependencies**
 
-`pip install -r requirements.txt'
+`pip install -r requirements.txt`
 
 Or manually install the main libraries:
 `pip install pandas matplotlib seaborn scikit-learn imbalanced-learn shap tensorflow`
@@ -92,9 +92,9 @@ ___
 
 ## Acknowledgments
 
-Fedesoriano for dataset compilation
-scikit-learn, TensorFlow, and SHAP libraries
-Visualization inspired by Seaborn and Matplotlib
+- Fedesoriano for dataset compilation
+- scikit-learn, TensorFlow, and SHAP libraries
+- Visualization inspired by Seaborn and Matplotlib
 ___
 
 ## License
