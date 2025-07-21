@@ -1,8 +1,6 @@
-# Heart-attack-prediction
+# Heart attack prediction
 
-A machine learning model that predicts the likelihood of heart attacks based on clinical data. Built for educational and research purposes.
-
-In this project, we'd dive into heart attack prediction, using the data from kaggle
+A machine learning project to predict the likelihood of heart attacks using clinical data. Built for educational and research purposes, this project demonstrates the full ML pipeline: data cleaning, exploratory analysis, model training, validation, and explainability.
 
 ___
 ## Dataset
